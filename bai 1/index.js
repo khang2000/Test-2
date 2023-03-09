@@ -1,16 +1,12 @@
-function findLongestWord(str) {
-  //   let str = "khang khoe";
-  let words = str.split("");
-  let maxLength = 0;
-  let LongestWord = [];
-  for (let i = 0; i < words.length; i++) {
-    if (words[i].length > maxLength) {
-      //   maxLength = words[i].length;
-      LongestWord.push(words[i]);
-      //   console.log(words[2]);
+function findLongestWord(arr) {
+  //   let arr = ["khang", "khoe", "phuowng"];
+  let New = arr[0];
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].length > New.length) {
+      New = arr[i];
     }
   }
-  return LongestWord;
+  console.log(New);
 }
-
-console.log(findLongestWord("khang khoe"));
+findLongestWord(["khang", "khoe", "phuowng"]);
